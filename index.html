@@ -6,30 +6,16 @@
 <title>Pantalla Quifatex</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    background: #000;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    cursor: none;
-  }
-
-  #container {
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
+  body { background: #000; width: 100vw; height: 100vh; overflow: hidden; cursor: none; }
+  #container { width: 100%; height: 100%; position: relative; }
 
   .slide {
     position: absolute;
     top: 0; left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100%; height: 100%;
     opacity: 0;
     transition: opacity 0.8s ease;
   }
-
   .slide.active { opacity: 1; }
 
   .slide img {
@@ -46,23 +32,18 @@
     display: block;
   }
 
-  /* Barra de progreso */
   #progress {
     position: fixed;
-    bottom: 0;
-    left: 0;
+    bottom: 0; left: 0;
     height: 5px;
     background: #e02020;
     width: 0%;
     z-index: 999;
-    transition: width linear;
   }
 
-  /* Indicador slide */
   #indicator {
     position: fixed;
-    top: 12px;
-    right: 16px;
+    top: 12px; right: 16px;
     background: rgba(0,0,0,0.6);
     color: #fff;
     font-family: sans-serif;
@@ -74,87 +55,62 @@
 </style>
 </head>
 <body>
-
 <div id="container">
 
-  <!-- PÁGINA WEB -->
   <div class="slide active" data-type="web">
-    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/" allowfullscreen></iframe>
+    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/"></iframe>
   </div>
 
-  <!-- IMAGEN 1 -->
   <div class="slide" data-type="image">
-    <img src="https://drive.usercontent.google.com/download?id=1iTCooeuOwwhP3FF7MMJD0UgnZniolJIZ&export=view" alt="">
+    <img src="https://slopez1999.github.io/pantalla/phishing_4k_v2.jpg" alt="">
   </div>
 
-  <!-- PÁGINA WEB -->
   <div class="slide" data-type="web">
-    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/" allowfullscreen></iframe>
+    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/"></iframe>
   </div>
 
-  <!-- IMAGEN 2 -->
   <div class="slide" data-type="image">
-    <img src="https://drive.usercontent.google.com/download?id=1yF4aXqtzw2fYuWamjb5y3ES8FKuZSGEV&export=view" alt="">
+    <img src="https://slopez1999.github.io/pantalla/tv4k_01.jpg" alt="">
   </div>
 
-  <!-- PÁGINA WEB -->
   <div class="slide" data-type="web">
-    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/" allowfullscreen></iframe>
+    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/"></iframe>
   </div>
 
-  <!-- IMAGEN 3 -->
   <div class="slide" data-type="image">
-    <img src="https://drive.usercontent.google.com/download?id=1V8qee8o98pZkw9u8AHh5-d4lfcMFxxze&export=view" alt="">
+    <img src="https://slopez1999.github.io/pantalla/tv4k_02.jpg" alt="">
   </div>
 
-  <!-- PÁGINA WEB -->
   <div class="slide" data-type="web">
-    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/" allowfullscreen></iframe>
+    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/"></iframe>
   </div>
 
-  <!-- IMAGEN 4 -->
   <div class="slide" data-type="image">
-    <img src="https://drive.usercontent.google.com/download?id=1yFyfYXvGOVHzriXAv6VVnGnsMIkeM0-_&export=view" alt="">
+    <img src="https://slopez1999.github.io/pantalla/tv4k_03.jpg" alt="">
   </div>
 
-  <!-- PÁGINA WEB -->
   <div class="slide" data-type="web">
-    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/" allowfullscreen></iframe>
+    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/"></iframe>
   </div>
 
-  <!-- IMAGEN 5 -->
   <div class="slide" data-type="image">
-    <img src="https://drive.usercontent.google.com/download?id=1b9mopv8I_BPwj4Dq94_sAD5tszNEhKby&export=view" alt="">
+    <img src="https://slopez1999.github.io/pantalla/tv4k_04.jpg" alt="">
   </div>
 
-  <!-- PÁGINA WEB -->
   <div class="slide" data-type="web">
-    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/" allowfullscreen></iframe>
+    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/"></iframe>
   </div>
 
-  <!-- IMAGEN 6 -->
   <div class="slide" data-type="image">
-    <img src="https://drive.usercontent.google.com/download?id=1f3if2sHNlEKF2oRssf7uAtZI4mvruAqw&export=view" alt="">
+    <img src="https://slopez1999.github.io/pantalla/tv4k_05.jpg" alt="">
   </div>
 
-  <!-- PÁGINA WEB -->
   <div class="slide" data-type="web">
-    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/" allowfullscreen></iframe>
+    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/"></iframe>
   </div>
 
-  <!-- IMAGEN 7 -->
   <div class="slide" data-type="image">
-    <img src="https://drive.usercontent.google.com/download?id=1VG6DFtssZJ4Cw3vmkruDp99HYTtlm44v&export=view" alt="">
-  </div>
-
-  <!-- PÁGINA WEB -->
-  <div class="slide" data-type="web">
-    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/" allowfullscreen></iframe>
-  </div>
-
-  <!-- IMAGEN 8 -->
-  <div class="slide" data-type="image">
-    <img src="https://drive.usercontent.google.com/download?id=19eyq00x0_jFRlVdBL0tR-EWEKBT0eipy&export=view" alt="">
+    <img src="https://slopez1999.github.io/pantalla/tv4k_06.jpg" alt="">
   </div>
 
 </div>
@@ -166,7 +122,7 @@
   const slides = document.querySelectorAll('.slide');
   const progress = document.getElementById('progress');
   const indicator = document.getElementById('indicator');
-  const DURATION = 10000; // 10 segundos
+  const DURATION = 10000;
   let current = 0;
   let startTime = null;
   let animFrame = null;
@@ -195,7 +151,6 @@
     animFrame = requestAnimationFrame(step);
   }
 
-  // Entrar en pantalla completa automáticamente
   document.addEventListener('click', () => {
     if (!document.fullscreenElement) {
       document.documentElement.requestFullscreen();
@@ -204,6 +159,5 @@
 
   showSlide(0);
 </script>
-
 </body>
 </html>
