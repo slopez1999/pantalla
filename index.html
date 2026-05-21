@@ -25,13 +25,6 @@
     display: block;
   }
 
-  .slide iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    display: block;
-  }
-
   #progress {
     position: fixed;
     bottom: 0; left: 0;
@@ -57,56 +50,28 @@
 <body>
 <div id="container">
 
-  <div class="slide active" data-type="web">
-    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/"></iframe>
-  </div>
-
-  <div class="slide" data-type="image">
+  <div class="slide active" data-type="image">
     <img src="https://slopez1999.github.io/pantalla/phishing_4k_v2.jpg" alt="">
-  </div>
-
-  <div class="slide" data-type="web">
-    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/"></iframe>
   </div>
 
   <div class="slide" data-type="image">
     <img src="https://slopez1999.github.io/pantalla/tv4k_01.jpg" alt="">
   </div>
 
-  <div class="slide" data-type="web">
-    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/"></iframe>
-  </div>
-
   <div class="slide" data-type="image">
     <img src="https://slopez1999.github.io/pantalla/tv4k_02.jpg" alt="">
-  </div>
-
-  <div class="slide" data-type="web">
-    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/"></iframe>
   </div>
 
   <div class="slide" data-type="image">
     <img src="https://slopez1999.github.io/pantalla/tv4k_03.jpg" alt="">
   </div>
 
-  <div class="slide" data-type="web">
-    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/"></iframe>
-  </div>
-
   <div class="slide" data-type="image">
     <img src="https://slopez1999.github.io/pantalla/tv4k_04.jpg" alt="">
   </div>
 
-  <div class="slide" data-type="web">
-    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/"></iframe>
-  </div>
-
   <div class="slide" data-type="image">
     <img src="https://slopez1999.github.io/pantalla/tv4k_05.jpg" alt="">
-  </div>
-
-  <div class="slide" data-type="web">
-    <iframe src="https://his.quifatex.com:8080/monitoreo/carrusel/"></iframe>
   </div>
 
   <div class="slide" data-type="image">
@@ -129,8 +94,7 @@
 
   function showSlide(index) {
     slides.forEach((s, i) => s.classList.toggle('active', i === index));
-    const type = slides[index].dataset.type === 'web' ? '🌐 Página web' : '🖼️ Imagen';
-    indicator.textContent = type + ' · ' + (index + 1) + ' / ' + slides.length;
+    indicator.textContent = '🖼️ Imagen ' + (index + 1) + ' / ' + slides.length;
     startTime = performance.now();
     animateProgress();
   }
